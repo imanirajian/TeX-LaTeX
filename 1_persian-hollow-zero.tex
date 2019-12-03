@@ -1,0 +1,41 @@
+% Author: Iman Irajian
+% iman.irajian@gmail.com
+% Title: Persian hollow zero
+%--------------------------------
+\documentclass[a4paper]{book} % Document format
+
+\usepackage{xepersian} % We want a Persian document
+
+\settextfont[Scale=1]{Yas} % Main font (Persian)
+\setdigitfont[Scale=1]{Yas} % Numbers in formula font
+\setlatintextfont[Scale=0.9]{Times New Roman} % Latin font (English)
+
+% Considering other fonts for Persian texts.
+\defpersianfont\ZarFont[Scale=1]{Zar}
+\defpersianfont\IRLotusFont[Scale=1]{IRLotus}
+%--------------------------------
+\begin{document}
+
+	در این سند، قلم ''یاس`` انتخاب شده است که از صفر توخالی پشتیبانی می‌کند. قلم دیگری که این خاصیت را دارد،
+	''\lr{IRLotus}``
+	است:
+	{\IRLotusFont
+	برای مثال این یک 0 در قلم لوتوس است.}
+	\par
+	این یک 0 توخالی است.
+	\par
+	این یک
+	$0$
+	در فرمول است.
+	\par
+	این یک
+	{\ZarFont 0}
+	توپر است.	
+	\par
+	قلم لاتین
+	''\lr{Times new roman}``
+	انتخاب شده دلخواه است. 
+	\lr{0}	
+	لاتین به این صورت است.
+
+\end{document}
